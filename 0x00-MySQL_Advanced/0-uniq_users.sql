@@ -1,4 +1,4 @@
--- Creates a table users with below attributes
+-- Creates a table users 
 -- id, integer, never null, auto increment and primary key
 CREATE TABLE IF NOT EXISTS users (
        id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
