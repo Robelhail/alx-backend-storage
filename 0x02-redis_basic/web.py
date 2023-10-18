@@ -34,11 +34,3 @@ def get_page(url: str) -> str:
     """ Returns HTML content of a url """
     res = requests.get(url)
     return res.text
-
-if __name__ == "__main__":
-    # Test the caching and tracking functionality with the slowwly URL
-    slowwly_url = "http://slowwly.robertomurray.co.uk/delay/1000/url/http://www.google.com"
-    content = get_page(slowwly_url)
-    print(content)
-    print("Access count for", slowwly_url, ":", store.get("count:" + slowwly_url).decode("utf-8"))
-
