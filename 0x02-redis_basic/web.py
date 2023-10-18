@@ -32,10 +32,3 @@ def get_page(url: str) -> str:
     """
     response = requests.get(url)
     return response.text
-
-if __name__ == "__main__":
-    # Example usage of the get_page function with the slowwly URL
-    slowwly_url = "http://slowwly.robertomurray.co.uk/delay/1000/url/http://www.google.com"
-    content = get_page(slowwly_url)
-    print(content)
-
