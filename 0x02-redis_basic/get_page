@@ -1,0 +1,1 @@
+prototype: def get_page(url: str) -> str:
